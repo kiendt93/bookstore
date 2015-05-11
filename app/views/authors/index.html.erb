@@ -1,0 +1,9 @@
+<h1>List Authors</h1>
+
+<ul>
+  <% Author.all.each do |author| %>
+    <li>
+      <p><%= author.has_attribute?(:name) ? (author.name.to_s) : 'No Name' %></p>
+    </li>
+  <% end %>
+</ul>
